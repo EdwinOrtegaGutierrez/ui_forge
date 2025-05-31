@@ -144,7 +144,7 @@ export default function SidebarUI() {
             height: '1.5rem',
             fontSize: '0.75rem',
             fontWeight: 'bold',
-            userSelect: 'none',
+            userSelect: 'none' as const,
             padding: '0 0.4rem',
         },
         iconMarginRight: {
@@ -263,7 +263,7 @@ export default function SidebarUI() {
                     </div>
                 )}
             />
-            <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alingContent:'center', gap:'20px'  }}>
+            <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignContent:'center', gap:'20px'  }}>
                 {loading ? (
                     <Skeleton  width='110px' height='50px'/> 
                 ) : (
